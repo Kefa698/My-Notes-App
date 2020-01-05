@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         //showing on the activity
         menuInflater.inflate(R.menu.main_menu,menu)
-
+///use menu to access to the item
         val sv=menu!!.findItem(R.id.app_bar_search).actionView as SearchView
         val sm=getSystemService(Context.SEARCH_SERVICE) as SearchManager
         sv.setSearchableInfo(sm.getSearchableInfo(componentName))
